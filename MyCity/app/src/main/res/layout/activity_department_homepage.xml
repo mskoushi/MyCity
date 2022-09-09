@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F3"
+    tools:context=".department_homepage">
+
+    <Button
+        android:id="@+id/dept_complaint_view"
+        android:layout_width="362dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_complaintview"
+        android:gravity="center|left"
+        android:paddingLeft="50dp"
+        android:paddingBottom="10dp"
+        android:text="COMPLAINT"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/dept_logout"
+        app:layout_constraintEnd_toEndOf="@+id/dept_logout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dept_logout" />
+
+    <Button
+        android:id="@+id/dept_logout"
+        android:layout_width="362dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/ic_adminlogout"
+        android:gravity="center|left"
+        android:paddingLeft="50dp"
+        android:paddingBottom="10dp"
+        android:text="LOGOUT"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/dept_citizen_list"
+        android:layout_width="362dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_citizen_list"
+        android:gravity="center|left"
+        android:paddingLeft="50dp"
+        android:paddingBottom="10dp"
+        android:text="CITIZEN LIST"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/dept_complaint_view"
+        app:layout_constraintEnd_toEndOf="@+id/dept_complaint_view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dept_complaint_view" />
+
+    <TextView
+        android:id="@+id/department_title"
+        android:layout_width="339dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="clip_horizontal|center"
+        android:textColor="#329D9C"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/dept_citizen_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.839" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

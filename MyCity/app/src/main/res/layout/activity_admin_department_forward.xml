@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F3"
+    tools:context=".admin_department_forward">
+
+    <EditText
+        android:id="@+id/forward_complaint_regno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/textbox"
+        android:ems="10"
+        android:hint="Enter Complaint regno"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/forward_complaint_department"
+        app:layout_constraintEnd_toEndOf="@+id/forward_complaint_department"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/forward_complaint_department" />
+
+    <EditText
+        android:id="@+id/forward_complaint_department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/textbox"
+        android:ems="10"
+        android:hint="Enter department"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/forward_complaint_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/forward_complaint_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="124dp"
+        android:background="@drawable/buttoncolor"
+        android:text="SUBMIT"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="188dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="left"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/forward_complaint_regno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/forward_complaint_regno"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.815" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F3"
+    tools:context=".admin_homepage">
+
+    <Button
+        android:id="@+id/admin_complaint_view"
+        android:layout_width="362dp"
+        android:layout_height="148dp"
+        android:background="@drawable/ic_complaintview"
+        android:gravity="center|left"
+        android:paddingLeft="50dp"
+        android:paddingBottom="10dp"
+        android:text="COMPLAINTS"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.519" />
+
+    <Button
+        android:id="@+id/admin_logout"
+        android:layout_width="362dp"
+        android:layout_height="148dp"
+        android:background="@drawable/ic_adminlogout"
+        android:gravity="center|left"
+        android:paddingLeft="50dp"
+        android:paddingBottom="10dp"
+        android:text="LOGOUT"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_complaint_view" />
+
+    <Button
+        android:id="@+id/admin_citizen_list"
+        android:layout_width="362dp"
+        android:layout_height="148dp"
+        android:background="@drawable/ic_citizen_list"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center|left"
+        android:paddingLeft="50dp"
+        android:paddingBottom="10dp"
+        android:text="CITIZEN LIST"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/admin_complaint_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.651" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
